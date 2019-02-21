@@ -100,7 +100,7 @@ ui = shinydashboard::dashboardPage(
                   hr(),
                   textInput(inputId = "Project_name1",value = "CytoSEE",label = "Name the project here:"),
                   br(),
-                  h5(strong("Only .fcs is permitted, Demo:"),a(href="001.fcs","001.fcs")),
+                  h5(strong("Only .fcs is permitted, Demo:"),a(href="http://bis.zju.edu.cn/cytosee/001.fcs","001.fcs")),
                   fileInput(inputId = "fcs",
                             label = "",
                             accept=c('.fcs'))
@@ -122,7 +122,7 @@ ui = shinydashboard::dashboardPage(
                   hr(),
                   textInput(inputId = "Project_name2",value = "CytoSEE",label = "Name the project here:"),
                   br(),
-                  h5(strong("Only .Rdata is permitted, Demo:"),a(href="001.RData","001.RData")),
+                  h5(strong("Only .Rdata is permitted, Demo:"),a(href="http://bis.zju.edu.cn/cytosee/001.RData","001.RData")),
                   fileInput(inputId = "Rdata",
                             label = "",
                             accept=c('.Rdata'))
