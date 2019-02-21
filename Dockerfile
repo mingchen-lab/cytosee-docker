@@ -33,7 +33,9 @@ RUN Rscript packages.R \
 
 COPY ./*.deb shiny-server.deb
 RUN gdebi -n shiny-server.deb \
-    && rm -f shiny-server.deb 
+    && rm -f shiny-server.deb \
+    && rm -rf /srv/shiny-server/*
+COPY ./cytosee_shiny/* /srv/shiny-server/
 
 # config for locale
 RUN apt-get install -y locales locales-all \ 
