@@ -900,7 +900,7 @@ server = function(input,output,session){
   observeEvent(input$Rdata,{
     inFile <- input$Rdata
     load(inFile$datapath)
-      cyto1<<-initiflow(fcs.data=cyto@fcs.data,projectname = cyto@projectname)
+      cyto1 <-initiflow(fcs.data=cyto@fcs.data,projectname = cyto@projectname)
       cyto1@filename <- cyto@filename
       cyto1@autoLabel <- cyto@autoLabel
       cyto1@clust_method <- cyto@clust_method
@@ -919,7 +919,8 @@ server = function(input,output,session){
       cyto1@dim.red <- cyto@dim.red
       cyto1@outermethod <- cyto@outermethod
       cyto1@transform_paras <- cyto@transform_paras
-      cyto <- cyto1
+      cyto <<- cyto1
+      rm(cyto1)
 
     if(is.null(cyto@ClusterID)){
       shinyalert("Invaild input file !",
