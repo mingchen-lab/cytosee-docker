@@ -1,12 +1,11 @@
 source('http://bioconductor.org/biocLite.R')
 chooseBioCmirror(graphics=FALSE,ind=11)
 chooseCRANmirror(graphics=FALSE, ind=37)
-tools_cran = c('Rcpp','doParallel','reshape2','shiny','igraph','shinyjs','shinydashboard','ada','Rtsne','visNetwork','vegan','hexbin','devtools')
+tools_cran = c('Rcpp','doParallel','reshape2','shiny','ggplot2','igraph','shinyjs','shinydashboard','ada','Rtsne','visNetwork','vegan','hexbin','devtools')
 install.packages(tools_cran)
 ## for single cell analysis
 tools_bioc = c('flowCore','FlowSOM','flowMeans','SamSPECTRAL','flowAI')
 biocLite(tools_bioc,ask=FALSE)
-devtools::install_github("tidyverse/ggplot2")
 devtools::install_github('JinmiaoChenLab/Rphenograph')
 devtools::install_github('madlogos/recharts')
 devtools::install_github('mingchen-lab/cytosee')
