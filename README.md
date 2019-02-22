@@ -8,7 +8,7 @@ Docker image with CytoSEE
 # clone this repo 
 git clone https://github.com/mingchen-lab/cytosee-docker.git
 cd cytosee-docker
-docker build -t CytoSEE --network host .
+docker build -t cytosee --network host .
 ```
 ### pull from dockerhub
 ```bash
