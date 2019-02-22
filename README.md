@@ -1,6 +1,5 @@
 # cytosee-docker
-Docker image with CytoSEE
-
+Docker image with CytoSEE, for source code please visit [cytosee](https://github.com/mingchen-lab/cytosee)
 ## Installation
 
 ### Build from dockerfile
